@@ -1,0 +1,164 @@
+.commerce_four-info {
+    display: flex;
+    gap: 244px;
+    margin-top: 250px;
+
+    @media (max-width:$tablet) {
+        max-width: $tablet; 
+    }
+
+    @media (max-width:$phone) {
+        max-width: $phone;
+    }
+
+    .flower {
+        background-image: url(/images/Visual\ -\ Flower.svg);
+        background-repeat: no-repeat;
+        width:431.75px;
+        height:613.62px;
+        margin: 0px 0px 0px -69px;
+
+
+        h2 {
+            @include flexBox;
+            font-family: 'SF Pro Rounded';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 50px;
+            line-height: 107.9%;
+            letter-spacing: 0.01em;
+            color: $color;
+            padding: 201px 0px 0px 0px;
+
+            @media (max-width:$tablet) {
+                @include flexBox;
+               margin-left: 610px;
+            }
+
+        }
+
+        a {
+            text-decoration: none;
+            background: $color;
+            border-radius: 8px;
+            font-family: 'Quicksand';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 97.9%;
+            text-align: center;
+            letter-spacing: 0.01em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            padding: 12px 80px;
+            margin: 0px 0px 0px 100px;
+
+            @media (max-width:$tablet) {
+                @include flexBox;
+               margin-left: 490px;
+               padding: 12px 125px;
+            }
+        }
+    }
+ 
+
+    .al {
+      @include displayFlex;
+      justify-content: flex-end;
+      gap: 15px;
+
+      @media (max-width:$tablet) {
+        flex-direction: column;
+        margin: 499px 0 0 -229px;
+      }
+    
+
+      .diffuser {
+        @include displayFlex;
+        gap: 10px;
+        margin-left: 15px;
+
+        h4 {
+            font-family: 'SF Pro Display';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 140%;
+            color: #1F2937;
+            margin: 0;
+        }
+
+        span {
+            background: $color;
+            border-radius: 8px;
+            font-family: 'SF Pro Display';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 10px;
+            line-height: 97.9%;
+            text-align: center;
+            letter-spacing: 0.01em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            padding: 4px 9px;
+        }
+      }
+
+
+
+    .bg-image {
+        background-image: url(/images/box.svg);
+        background-repeat: no-repeat;
+        padding-top: 292px;
+        width: 375px;
+        height: 386px;
+        
+        .bg-color {
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(7.5px);
+            border-radius: 0px 20px;
+            width: 375px;
+            height: 91px;
+        }
+    }
+    .bgimage {
+        background-image: url(/images/blur.svg);
+        background-repeat: no-repeat;
+        padding-top: 292px;
+        width: 375px;
+        height: 386px;
+
+        .bagcolor {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(12.5px);
+            border-radius: 0px 20px; 
+            width: 375px;
+            height: 91px; 
+        
+           
+           
+            
+        }
+    }
+    .lux {
+        display: flex;
+
+        p {
+            margin: 7px 0px 10px 15px;
+            font-family: 'SF Pro Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 140%;
+            color: #6B7280;
+            width: 239px;
+            height: 40px;
+        }
+
+        button {
+            border: none;
+            margin: 0px 17px 0px 52px;
+        }
+    }
+  }
+}

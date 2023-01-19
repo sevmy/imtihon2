@@ -1,0 +1,67 @@
+header {
+position: relative;
+
+
+.header-box {
+    position: fixed;
+    background-color: white;
+    width: 1470px;
+    // padding: 0px 740px 0px 783px;
+    // left: 0;
+    // top: 0;
+    // right: 50px;
+    @include displayFlex;
+    justify-content: space-between;
+
+
+    @media (max-width:$tablet) {
+        max-width: $tablet;
+    }
+
+
+    @media (max-width:$phone) {
+        max-width: $phone;
+    }
+
+ .logo {
+    @include displayFlex;
+    gap: 12px; 
+}
+    
+        nav {
+     ul {
+        @include displayFlex;
+        gap: 10px;
+
+        li {
+            list-style-type: none;
+            
+            a {
+                text-decoration: none;
+                font-family: 'SF Pro Display';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 135%;
+                color: #1F2937;
+
+                &:hover {
+                    color: #aaa;
+                    transition: 0.4s ease;
+                }
+
+                &:active {
+                    color: #786cdf;
+                }
+
+                // &:focus {
+                //     color: $color;
+                // }
+
+            }
+        }
+    }
+  }
+ }
+}
+   

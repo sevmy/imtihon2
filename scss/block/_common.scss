@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    @include flexBox; 
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+
+.container {
+    width: 1440px;
+
+    @media (max-width:$tablet) {
+        max-width: $tablet;
+    }
+
+
+    @media (max-width:$phone) {
+        max-width: $phone;
+    }
+
+    }

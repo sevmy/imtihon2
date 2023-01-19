@@ -1,0 +1,72 @@
+.commerce_five-info {
+    @include flexBox;
+    margin-top: 200px;
+
+    @media (max-width:$tablet) {
+      max-width: $tablet;
+  }
+
+
+  @media (max-width:$phone) {
+      max-width: $phone;
+  }
+      .bgcolor {
+        background-color: $color;
+        background-image: url(/images/Texture_2_.svg);
+        width: 792px;
+        height: 514px;
+
+        @media (max-width:$tablet) {
+          width: 541px;
+          height: 515px;
+        }
+
+        h2 {
+            padding-left: 101px;
+            padding-top: 63px;
+            font-family: 'SF Pro Rounded';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 50px;
+            line-height: 119.4%;
+            letter-spacing: 0.01em;
+            color: #FFFFFF;
+            width: 523px;
+            height: 229px;
+
+            @media (max-width:$tablet) {
+              font-size: 38px;
+              text-align: center;
+              margin: 100px 0px -50px -44px;
+            }
+        }
+        a {
+            text-decoration: none;
+            background: #FFFFFF;
+            border-radius: 8px;
+            font-family: 'Quicksand';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 97.9%;
+            text-align: center;
+            letter-spacing: 0.01em;
+            text-transform: uppercase;
+            color: #1F2937;
+            padding: 12px 80px;
+            margin-left: 102px;
+            display: inline-block;
+            margin-top: 110px;
+        }
+      }
+
+      img {
+        @media (max-width:$tablet) { 
+        display: inline-block;
+        // background-image: url(/images/Image.png);
+        width: 302px;
+        height: 515px;
+        // background-repeat: no-repeat;
+        }
+      }
+}
